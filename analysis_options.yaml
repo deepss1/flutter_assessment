@@ -1,0 +1,96 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    missing_return: error
+    missing_required_param: true
+
+linter:
+  rules:
+    # Consistency rules
+    always_declare_return_types: true
+    always_specify_types: true
+    avoid_init_to_null: true
+    avoid_return_types_on_setters: true
+    prefer_asserts_with_message: true
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_contains: true
+    prefer_single_quotes: true
+    prefer_iterable_whereType: true
+    prefer_spread_collections: true
+
+    # Style and readability rules
+    avoid_multiple_declarations_per_line: true
+    avoid_relative_lib_imports: true
+    avoid_types_as_parameter_names: true
+    curly_braces_in_flow_control_structures: true
+    prefer_adjacent_string_concatenation: true
+    prefer_collection_literals: true
+    prefer_conditional_assignment: true
+    prefer_for_elements_to_map_fromIterable: true
+    prefer_if_elements_to_conditional_expressions: true
+    prefer_if_null_operators: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_null_aware_operators: true
+    type_annotate_public_apis: true
+    type_init_formals: true
+
+    # Code-quality rules
+    avoid_catching_errors: true
+    avoid_empty_else: true
+    avoid_print: true
+    avoid_redundant_argument_values: true
+    avoid_catches_without_on_clauses: true
+    avoid_returning_null: true
+    avoid_void_async: true
+    no_logic_in_create_state: true
+    use_key_in_widget_constructors: true
+    use_setters_to_change_properties: true
+    use_string_buffers: true
+    unnecessary_null_checks: true
+
+    # Performance rules
+    avoid_slow_async_io: true
+    prefer_const_constructors_in_immutables: true
+    prefer_final_in_for_each: true
+    prefer_final_locals: true
+
+    # Others
+    # Best practices
+    avoid_classes_with_only_static_members: true
+    avoid_null_checks_in_equality_operators: true
+    avoid_shadowing_type_parameters: true
+    avoid_unused_constructor_parameters: true
+    empty_constructor_bodies: true
+    join_return_with_assignment: true
+    no_duplicate_case_values: true
+    prefer_constructors_over_static_methods: true
+    prefer_int_literals: true
+    prefer_is_not_operator: true
+    prefer_typing_uninitialized_variables: true
+    provide_deprecation_message: true
+    unawaited_futures: true
+    use_rethrow_when_possible: true
+    valid_regexps: true
+
+    # Documentation
+    public_member_api_docs: true
+    missing_whitespace_between_adjacent_strings: true
+    unrelated_type_equality_checks: true
+
+    # Formatting
+    avoid_unnecessary_containers: true
+
+    # Potential errors
+    use_full_hex_values_for_flutter_colors: true
+    use_function_type_syntax_for_parameters: true
+
+    # Performance
+    prefer_foreach: true
+
+    # Maintainability
+    sort_constructors_first: true
+    sort_pub_dependencies: true
+    sort_unnamed_constructors_first: true
