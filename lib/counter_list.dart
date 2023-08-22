@@ -13,7 +13,7 @@ import 'package:flutter/material.dart'
         StatefulWidget,
         Text,
         Widget;
-import 'package:solution/list_item.dart';
+import 'package:solution/counter_item.dart';
 
 /// Counter List Widget
 class CounterList extends StatefulWidget {
@@ -55,7 +55,7 @@ class _CounterListState extends State<CounterList>
   ListView _buildCounterList() {
     return ListView.builder(
       itemCount: 100,
-      itemBuilder: (BuildContext context, int index) => ListItemWidget(
+      itemBuilder: (BuildContext context, int index) => CounterItemWidget(
         value: counts[index],
         onIncrement: () {
           _incrementCount(index);

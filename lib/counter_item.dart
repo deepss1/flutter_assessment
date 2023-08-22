@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart'
     show
         BuildContext,
-        Container,
-        EdgeInsets,
         Key,
         ListTile,
         StatelessWidget,
@@ -12,9 +10,9 @@ import 'package:flutter/material.dart'
         Widget;
 
 /// Widget for each item in the list.
-class ListItemWidget extends StatelessWidget {
+class CounterItemWidget extends StatelessWidget {
   /// Constructor for ListItemWidget.
-  const ListItemWidget({
+  const CounterItemWidget({
     required this.value,
     required this.onIncrement,
     Key? key,
@@ -28,15 +26,12 @@ class ListItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(4),
-      child: ListTile(
-        dense: true,
-        title: Text(value.toString()),
-        trailing: TextButton(
-          onPressed: onIncrement,
-          child: const Text('+'),
-        ),
+    return ListTile(
+      dense: true,
+      title: Text(value.toString()),
+      trailing: TextButton(
+        onPressed: onIncrement,
+        child: const Text('+'),
       ),
     );
   }
